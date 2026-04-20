@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sandipsinh Jadeja — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- ── NOISE OVERLAY ── -->
+  <div class="noise"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <div class="nav-logo">SJ<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="/download-resume" class="nav-cta">
+      <i class="fas fa-download"></i> Resume
+    </a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero"     onclick="closeMenu()">Home</a></li>
+      <li><a href="#about"    onclick="closeMenu()">About</a></li>
+      <li><a href="#skills"   onclick="closeMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#contact"  onclick="closeMenu()">Contact</a></li>
+      <li><a href="/download-resume" onclick="closeMenu()">Download Resume</a></li>
+    </ul>
+  </div>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+
+    <div class="hero-content">
+      <div class="hero-left reveal">
+        <p class="hero-tag"><span class="tag-dot"></span> Available for opportunities</p>
+        <h1 class="hero-name">Sandipsinh<br><span class="neon">Jadeja</span></h1>
+        <h2 class="hero-title">Full Stack <span class="outline-text">Developer</span></h2>
+        <p class="hero-summary">
+          Crafting scalable web experiences from pixel-perfect frontends to robust backends.
+          Passionate about clean code, smart architecture, and turning ideas into production-ready products.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Let's Talk <i class="fas fa-arrow-right"></i></a>
+          <a href="/download-resume" class="btn-ghost"><i class="fas fa-download"></i> Resume</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/sandipsinh77"                   target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/sandipsinh-jadeja-6661922ba" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com"                               target="_blank" class="social-icon" title="LeetCode">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          </a>
+          <a href="mailto:sandipsinhjadeja706@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal delay-2">
+        <div class="avatar-wrap">
+          <div class="avatar-ring r1"></div>
+          <div class="avatar-ring r2"></div>
+          <div class="avatar-placeholder">
+            <span>SJ</span>
+          </div>
+          <div class="avatar-badge"><i class="fas fa-code"></i> Dev</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// 01 — about</p>
+        <h2>Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Sandipsinh Jadeja</strong>, a passionate Full Stack Developer based in
+            <strong>Rajkot, Gujarat, India</strong>. Currently in my final year of BCA at
+            Saurashtra University, I've been building real-world web applications that bridge
+            beautiful design with solid engineering.
+          </p>
+          <p>
+            From social media clones in Django to custom WordPress plugins and PHP-based management
+            systems — I love tackling end-to-end problems. I thrive at the intersection of clean
+            frontend interfaces and efficient backend logic.
+          </p>
+          <p>
+            When I'm not coding, I'm exploring new frameworks, contributing to open source, and
+            continuously pushing my problem-solving skills on competitive platforms.
+          </p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects Built</span></div>
+            <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Tech Stack</span></div>
+            <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Coding</span></div>
+          </div>
+        </div>
+        <div class="about-info reveal delay-1">
+          <div class="info-card">
+            <div class="info-row"><span class="info-label"><i class="fas fa-user"></i> Name</span><span>Sandipsinh Jadeja</span></div>
+            <div class="info-row"><span class="info-label"><i class="fas fa-graduation-cap"></i> Degree</span><span>BCA — Saurashtra University</span></div>
+            <div class="info-row"><span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span><span>Rajkot, Gujarat, India</span></div>
+            <div class="info-row"><span class="info-label"><i class="fas fa-phone"></i> Phone</span><span>+91 7820067771</span></div>
+            <div class="info-row"><span class="info-label"><i class="fas fa-envelope"></i> Email</span><span>sandipsinhjadeja706@gmail.com</span></div>
+            <div class="info-row"><span class="info-label"><i class="fas fa-briefcase"></i> Status</span><span class="available">Open to Work</span></div>
+          </div>
+          <div class="link-cards">
+            <a href="https://github.com/sandipsinh77" target="_blank" class="link-card github">
+              <i class="fab fa-github"></i><span>GitHub</span><i class="fas fa-arrow-up-right-from-square small-icon"></i>
+            </a>
+            <a href="https://linkedin.com/in/sandipsinh-jadeja-6661922ba" target="_blank" class="link-card linkedin">
+              <i class="fab fa-linkedin-in"></i><span>LinkedIn</span><i class="fas fa-arrow-up-right-from-square small-icon"></i>
+            </a>
+            <a href="https://leetcode.com" target="_blank" class="link-card leetcode">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+              <span>LeetCode</span><i class="fas fa-arrow-up-right-from-square small-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SKILLS ══════════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// 02 — skills</p>
+        <h2>Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-group reveal delay-1">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skill-tags">
+            <span>PHP</span><span>Python</span><span>Django</span><span>REST API</span>
+          </div>
+        </div>
+        <div class="skill-group reveal delay-2">
+          <h3><i class="fas fa-database"></i> Databases</h3>
+          <div class="skill-tags">
+            <span>MySQL</span><span>PostgreSQL</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-group reveal delay-3">
+          <h3><i class="fas fa-tools"></i> Tools & Other</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>WordPress</span><span>Plugin Dev</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJECTS ══════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// 03 — projects</p>
+        <h2>Featured Work</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-num">01</div>
+          <div class="project-icon"><i class="fab fa-instagram"></i></div>
+          <h3>Instagram Demo</h3>
+          <p>Social media clone built with Python Django — supports posts, profiles, likes, and full authentication flow.</p>
+          <div class="project-tags"><span>Python</span><span>Django</span><span>PostgreSQL</span></div>
+          <a href="https://github.com/sandipsinh77" target="_blank" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <div class="project-num">02</div>
+          <div class="project-icon"><i class="fas fa-dumbbell"></i></div>
+          <h3>Gym Management System</h3>
+          <p>Complete membership, trainer management, and attendance handling system for gyms and fitness centres.</p>
+          <div class="project-tags"><span>PHP</span><span>MySQL</span><span>CSS</span></div>
+          <a href="https://github.com/sandipsinh77" target="_blank" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-num">03</div>
+          <div class="project-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h3>Attendance Management</h3>
+          <p>PHP & MySQL web platform for digital attendance tracking with role-based access for admins and teachers.</p>
+          <div class="project-tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+          <a href="https://github.com/sandipsinh77" target="_blank" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="project-card reveal delay-1">
+          <div class="project-num">04</div>
+          <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+          <h3>E-Commerce Website</h3>
+          <p>Full product management system with cart, order workflow, and a clean shopping interface built from scratch.</p>
+          <div class="project-tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span></div>
+          <a href="https://github.com/sandipsinh77" target="_blank" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="project-num">05</div>
+          <div class="project-icon"><i class="fab fa-wordpress"></i></div>
+          <h3>Gallery Management Plugin</h3>
+          <p>Custom WordPress plugin enabling admins to upload, organize, and display images with an intuitive dashboard.</p>
+          <div class="project-tags"><span>WordPress</span><span>PHP</span><span>Plugin Dev</span></div>
+          <a href="https://github.com/sandipsinh77" target="_blank" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">// 04 — contact</p>
+        <h2>Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <p class="contact-intro">
+            Whether you have an opportunity, a project idea, or just want to say hello —
+            my inbox is always open. I'll do my best to get back to you!
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div><p class="ci-label">Email</p><p>sandipsinhjadeja706@gmail.com</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div><p class="ci-label">Phone</p><p>+91 7820067771</p></div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div><p class="ci-label">Location</p><p>Rajkot, Gujarat, India</p></div>
+            </div>
+          </div>
+          <a href="/download-resume" class="btn-primary resume-dl">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="contact-right reveal delay-1">
+          <form id="contactForm" onsubmit="submitForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" placeholder="Arjun Shah" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Job Opportunity / Project Collab" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary submit-btn" id="submitBtn">
+              <span id="btnText"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span id="btnLoader" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+            </button>
+            <div id="formMsg" class="form-msg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">SJ<span class="dot">.</span></p>
+      <p class="footer-copy">© 2024 Sandipsinh Jadeja. Crafted with <span class="neon">♥</span> & Python Flask.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/sandipsinh77"                    target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/sandipsinh-jadeja-6661922ba" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://leetcode.com"                                target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+        </a>
+        <a href="mailto:sandipsinhjadeja706@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
